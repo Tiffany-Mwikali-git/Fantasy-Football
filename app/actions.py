@@ -53,4 +53,4 @@ def list_matches():
     session = get_session()
     matches = session.query(match.Match).all()
     for m in matches:
-        print(f"[{m.id}] {m.date} - {m.home_team_name} vs {m.away_team_name} | Score: {m.score or 'TBD'}")
+        print(f"[{m.id}] {m.date} - {m.home_team.name} vs {m.away_team.name} | Score: {m.score or 'TBD'}")
