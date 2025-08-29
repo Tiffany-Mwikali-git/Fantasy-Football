@@ -11,7 +11,7 @@ def add_team(name, league):
     new_team = team.Team(name=name, league=league)
     session.add(new_team)
     session.commit()
-    print(f"✅ Team '{name}' added.")
+    print(f" Team '{name}' added.")
 
 
 def list_teams():
@@ -26,7 +26,7 @@ def add_player(name, position, team_id):
     new_player = players.Player(name=name, position=position, team_id=team_id)
     session.add(new_player)
     session.commit()
-    print(f"✅ Player '{name}' added.")
+    print(f" Player '{name}' added.")
 
 
 def list_players():
@@ -46,7 +46,7 @@ def add_match(date, home_team_name, away_team_name, score=None):
     )
     session.add(new_match)
     session.commit()
-    print("✅ Match added.")
+    print(" Match added.")
 
 
 def list_matches():

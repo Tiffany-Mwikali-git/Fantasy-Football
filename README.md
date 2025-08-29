@@ -35,7 +35,7 @@ This system aims to digitize and simplify football operations by offering a reli
 
 ##  Technology Stack
 
-- **Python 3.8+**
+- **Python 3.12.3**
 - **SQLAlchemy** – ORM for database management
 - **Rich** – Library for beautiful CLI rendering
 - **SQLite** – Lightweight relational database
@@ -50,7 +50,7 @@ This system aims to digitize and simplify football operations by offering a reli
 gym\_cli/
 ├── app/
 │   ├── cli.py              # Main program entry point
-│   ├── actions.py          # Business logic handlers
+│   ├── actions.py          # Logic handlers
 │   ├── menus.py            # CLI menu structure
 │   ├── __init_.py           
 │   ├── models/
@@ -111,39 +111,33 @@ Each model will implement:
 * `create()`
 * `get_all()`
 * `find_by_id()`
-* `delete()`
 
 ---
 
 ##  Example CLI Menu
 
 ```
-FANTASY FOOTBALL SYSTEM
+FANTASY FOOTBALL MANAGER
 
 [1] Manage Matches
 [2] Manage Teams
 [3] Manage Players
-[5] Back to main menu
+[5] Exit
 
 Choose:
 ```
 
 ---
 
-## 🧹 Development Tools
+## Development Tools
 
 To reset the system (dev use only), a utility will be provided to delete all database rows.
 
 ---
 
-## 📝 License
+## License
 
 This project will be released under the **MIT License**.
 
 ---
 
-## 💬 Feedback
-
-If you’d like to suggest improvements or report issues, please open an issue or submit a pull request.
-
-```

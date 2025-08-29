@@ -1,7 +1,14 @@
+import logging
+logging.getLogger("sqlalchemy").setLevel(logging.WARNING)
+
+logging.getLogger("sqlalchemy.engine").setLevel(logging.WARNING)
+
 import argparse
 import sys
 from app import actions
 from app.menu import show_main_menu
+
+
 
 
 def parse_cli_args():

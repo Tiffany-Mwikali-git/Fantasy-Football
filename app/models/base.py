@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 Base = declarative_base()
 
 # Create engine
-engine = create_engine("sqlite:///fantasy_football.db", echo=True)
+engine = create_engine("sqlite:///fantasy_football.db", echo=False)
 
 # Session factory
 SessionLocal = sessionmaker(bind=engine)

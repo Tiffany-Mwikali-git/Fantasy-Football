@@ -1,8 +1,8 @@
-"""create initial tables
+"""initial migration
 
-Revision ID: 91d43434ea37
-Revises: 
-Create Date: 2025-08-26 17:07:15.190919
+Revision ID: 90e656c0d0a0
+Revises: bf3870e58cb0
+Create Date: 2025-08-29 15:44:35.558220
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '91d43434ea37'
-down_revision: Union[str, None] = None
+revision: str = '90e656c0d0a0'
+down_revision: Union[str, None] = 'bf3870e58cb0'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
@@ -31,10 +31,10 @@ def upgrade() -> None:
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('date', sa.String(), nullable=False),
     sa.Column('score', sa.String(), nullable=True),
-    sa.Column('home_team_id', sa.Integer(), nullable=False),
-    sa.Column('away_team_id', sa.Integer(), nullable=False),
-    sa.ForeignKeyConstraint(['away_team_id'], ['teams.id'], ),
-    sa.ForeignKeyConstraint(['home_team_id'], ['teams.id'], ),
+    sa.Column('home_team_name', sa.String(), nullable=False),
+    sa.Column('away_team_name', sa.String(), nullable=False),
+    sa.ForeignKeyConstraint(['away_team_name'], ['teams.name'], ),
+    sa.ForeignKeyConstraint(['home_team_name'], ['teams.name'], ),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_table('players',
