@@ -1,13 +1,10 @@
-
-
-```
-#  Fantasy Football (CLI-Based)
+# Fantasy Football (CLI-Based)
 
 The **Football Application** is a proposed terminal-based application designed to help football lovers efficiently manage players, matches, and teams through a structured command-line interface. The system will be built using Python, leveraging SQLAlchemy ORM for database operations and Click for an enhanced CLI experience.
 
 ---
 
-##  Purpose
+## Purpose
 
 This system aims to digitize and simplify football operations by offering a reliable and interactive way to manage football.
 
@@ -60,8 +57,7 @@ fantasy football/
 ├── Pipfile / requirements.txt
 └── README.md
 
-````
-
+```
 ---
 
 ## Setup Instructions
