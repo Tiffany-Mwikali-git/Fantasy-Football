@@ -7,7 +7,7 @@ The **Football Application** is a proposed terminal-based application designed t
 
 ---
 
-## 📌 Purpose
+##  Purpose
 
 This system aims to digitize and simplify football operations by offering a reliable and interactive way to manage football.
 
