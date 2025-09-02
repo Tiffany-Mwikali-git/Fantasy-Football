@@ -3,7 +3,7 @@
 ```
 #  Fantasy Football (CLI-Based)
 
-The **Football Application** is a proposed terminal-based application designed to help football lovers efficiently manage players, matches, and teams through a structured command-line interface. The system will be built using Python, leveraging SQLAlchemy ORM for database operations and Rich for an enhanced CLI experience.
+The **Football Application** is a proposed terminal-based application designed to help football lovers efficiently manage players, matches, and teams through a structured command-line interface. The system will be built using Python, leveraging SQLAlchemy ORM for database operations and Click for an enhanced CLI experience.
 
 ---
 
@@ -37,7 +37,6 @@ This system aims to digitize and simplify football operations by offering a reli
 
 - **Python 3.12.3**
 - **SQLAlchemy** – ORM for database management
-- **Rich** – Library for beautiful CLI rendering
 - **SQLite** – Lightweight relational database
 - **Virtual Environment** – `venv` or `pipenv` supported
 
@@ -47,7 +46,7 @@ This system aims to digitize and simplify football operations by offering a reli
 
 ```
 
-gym\_cli/
+fantasy football/
 ├── app/
 │   ├── cli.py              # Main program entry point
 │   ├── actions.py          # Logic handlers
@@ -67,11 +66,11 @@ gym\_cli/
 
 ## Setup Instructions
 
-###  Clone the Repository
+###  Clone the Repositoryfootball_fantasy
 
 ```bash
-git clone https://github.com/tiffany-mwikali/fantasyfootball_cli.git
-cd fantasy football_cli
+git clone https://github.com/tiffany-mwikali/fantasyfootball.git
+cd fantasy football
 ````
 
 ### 2️ Create a Virtual Environment
@@ -99,7 +98,7 @@ python -m app.cli
 
 ---
 
-##  ORM Overview
+##  ORM Overvie()`w
 
 The database models will include:
 
@@ -108,9 +107,9 @@ The database models will include:
 
 Each model will implement:
 
-* `create()`
-* `get_all()`
-* `find_by_id()`
+* `create`
+* `get_all`
+* `find_by_id`
 
 ---
 
@@ -126,12 +125,6 @@ FANTASY FOOTBALL MANAGER
 
 Choose:
 ```
-
----
-
-## Development Tools
-
-To reset the system (dev use only), a utility will be provided to delete all database rows.
 
 ---
 
